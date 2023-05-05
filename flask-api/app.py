@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "your-openai-api-key"
 
 # Define the endpoint for the sentiment analysis API
 @app.route('/sentiment', methods=['POST'])
