@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "openai-api-key"
 
 @app.route('/sentiment', methods=['POST'])
 def sentiment_analysis():
