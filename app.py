@@ -1,11 +1,13 @@
+import os
+import json
 from flask import Flask, request, jsonify
 import openai
-import json
+
 
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = "openai-api-key"
+openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 @app.route('/sentiment', methods=['POST'])
 def sentiment_analysis():
