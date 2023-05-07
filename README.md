@@ -19,14 +19,14 @@ Note: You need to provide Open AI API Key in deployment file.
 
 *main.tf*: contains terraform script to create a Kubernetes Cluster on GCP.
 
-**Load Testing with JMeter**
-
 
 **Postman Collection**
 
 *RocketML-Assignment.postman_collection.json* file contains the collection.
 
+**Load Testing with JMeter**
 
+*test_plan.jmx* file contains the plan to load the given API. To do so, please install JMeter and import this plan. Fill the test url and click on run to see the run the test.
 
 
 
