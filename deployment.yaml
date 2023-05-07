@@ -15,6 +15,9 @@ spec:
       containers:
         - name: rocketml-assignment
           image: gcr.io/rocketml-385812/rocketml-assignment:latest
+          env:
+            - name: OPENAI_API_KEY
+              value: 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
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
