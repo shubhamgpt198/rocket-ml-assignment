@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rocketml-assignment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rocketml-assignment
+  template:
+    metadata:
+      labels:
+        app: rocketml-assignment
+    spec:
+      containers:
+        - name: rocketml-assignment
+          image: gcr.io/rocketml-385812/rocketml-assignment:latest
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: gcr-secret
