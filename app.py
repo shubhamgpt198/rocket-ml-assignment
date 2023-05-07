@@ -32,7 +32,6 @@ def sentiment_analysis():
         )
 
         # Extract the sentiment from the OpenAI response
-        print(response)
         sentiment = response.choices[0].text.strip()
 
         # Extract the values from the response
