@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "1ad95064-5f38-4767-82cc-3f6be7d17a28",
+		"name": "RocketML-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Analyze",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"यह प्रोडक्ट अच्छा है !\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{url}}/sentiment",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sentiment"
+					]
+				},
+				"description": "The requests in json format with key value pairs of {text: \"text to be processed\"} and return reponse with following:\n\n{\n    \"response_data\": {\n        \"language\": detected_language,\n        \"sentiment\": positive, negetive or neutral,\n        \"topic\": topic_of_text\n    }\n}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

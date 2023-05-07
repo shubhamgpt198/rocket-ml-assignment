@@ -22,7 +22,9 @@ Note: You need to provide Open AI API Key in deployment file.
 **Load Testing with JMeter**
 
 
+**Postman Collection**
 
+*RocketML-Assignment.postman_collection.json* file contains the collection.
 
 
 
